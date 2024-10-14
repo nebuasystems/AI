@@ -1,0 +1,14 @@
+<!doctype html> 
+<html> 
+    
+    <head> <title>예측 결과</title> </head> 
+    
+    <body>
+        <br> 
+        <h1>예측 결과</h1> 
+        <br><br><br>
+        {% for table in tables %} {{ table|safe }} {% endfor %} 
+        <br> <a href="{{ url_for('home') }}">다른 파일 업로드하기</a> 
+    </body> 
+
+</html>

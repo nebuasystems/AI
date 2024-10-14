@@ -1,0 +1,15 @@
+<!doctype html> 
+<html> 
+
+    <head> <title>XGBoost 모델 시험</title> </head> 
+    
+    <body> <h1>XGBoost 모델 시험 : csv 파일 업로드</h1> 
+        (temperature,	pressure,	speed,	tool_wear,	material_hardness,	vibration,	power_consumption)
+
+       <form action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data"> 
+            <br>
+            <input type="file" name="file" accept=".csv"> <input type="submit" value="업로드"> 
+        </form>
+    </body> 
+    
+</html>
